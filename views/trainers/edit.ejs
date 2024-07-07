@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= trainer.name %></title>
+</head>
+
+<body>
+    <h1>Edit <%= trainer.name %></h1>
+    <form action="/trainers/<%= trainer._id %>?_method=PUT"  method="POST">
+        <label hidden for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" value="<%= trainer.name %>">
+
+        <label hidden for="color">Color:</label>
+        <input type="text" name="color" id="color" placeholder="Color" value="<%= trainer.color %>">
+
+
+        <label hidden for="type">Type:</label>
+        <input type="text" name="type" id="type" placeholder="Type" value="<%= trainer.type %>">
+
+        <label hidden for="material">material:</label>
+        <input type="text" name="material" id="material" placeholder="Material" value="<%= trainer.material%>">
+
+        <label hidden for="size">Size:</label>
+        <input type="text" name="size" id="size" placeholder="Shoe Size" value="<%= trainer.size %>">
+
+        <label hidden for="year">Release Year:</label>
+        <input type="text" name="year" id="year" placeholder="Release Year" value="<%= trainer.year %>">
+
+
+        <button type="submit">Edit Trainer</button>
+    </form>
+    <button>
+        <a href="/trainers">Back To Our Shoes</a>
+    </button>
+</body>
+
+</html>

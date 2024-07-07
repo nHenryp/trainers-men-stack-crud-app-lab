@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Shoe</title>
+</head>
+
+<body>
+    <h1>Create Your Shoe</h1>
+    <form action="/trainers" method="POST">
+        <label hidden for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+
+        <label hidden for="color">Color:</label>
+        <input type="text" name="color" id="color" placeholder="Color">
+
+
+        <label hidden for="type">Type:</label>
+        <input type="text" name="type" id="type" placeholder="Type">
+
+        <label hidden for="material">material:</label>
+        <input type="text" name="material" id="material" placeholder="Material">
+
+        <label hidden for="size">Size:</label>
+        <input type="text" name="size" id="size" placeholder="Shoe Size">
+
+        <label hidden for="year">Release Year:</label>
+        <input type="text" name="year" id="year" placeholder="Release Year">
+
+
+        <button type="submit">Add Trainer</button>
+    </form>
+    <button>
+        <a href="/trainers">Back To Our Shoes</a>
+    </button>
+</body>
+
+</html>

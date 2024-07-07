@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= trainer.name %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= trainer.name %>
+    </h1>
+    <form action="/trainers/<%= trainer._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= trainer.name %></button>
+    </form>
+
+    <a href="/trainers/<%= trainer._id%>/edit">Edit <%= trainer.name %></a><br>
+    <a href="/trainers">Back To Our Shoes</a>
+</body>
+
+</html>
